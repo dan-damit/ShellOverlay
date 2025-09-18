@@ -13,6 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.Tests", "Shell
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.UI", "ShellOverlay.UI\ShellOverlay.UI.csproj", "{44255E1D-0657-494B-C615-E723137797A4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\InstallCert.exe = Assets\InstallCert.exe
+		Assets\windowsdesktop-runtime-8.0.19-win-x64.exe = Assets\windowsdesktop-runtime-8.0.19-win-x64.exe
+		Assets\WSSetupIcon.ico = Assets\WSSetupIcon.ico
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
