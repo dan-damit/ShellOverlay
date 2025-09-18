@@ -1,12 +1,45 @@
-﻿<Window x:Class="ShellOverlay.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ShellOverlay"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        x:Class="ShellOverlay.UI.MainWindow"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ResizeMode="CanResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="Manual"
+        Left="0"
+        Top="0"
+        Height="250"
+        Width="800"
+        MinHeight="100"
+        MinWidth="600"
+        SizeChanged="MainWindow_SizeChanged"
+        Loaded="MainWindow_Loaded"
+        BorderBrush="Gray"
+        BorderThickness="1">
 
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Left: Pinned Apps -->
+            <StackPanel Grid.Column="0"
+                        Orientation="Horizontal" />
+
+            <!-- Center: Workspace Indicator -->
+            <StackPanel Grid.Column="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center" />
+
+            <!-- Right: Status Bar -->
+            <StackPanel Grid.Column="2"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right" />
+        </Grid>
     </Grid>
 </Window>
