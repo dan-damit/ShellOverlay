@@ -1,5 +1,12 @@
 # ShellOverlay
 
+**Author:** Dan Damit  
+**Email:** dan@thedamits.com  
+**Platform:** Windows  
+**Tech Stack:** C#, .NET 8.0, WPF, WiX
+
+---
+
 A modular, branded shell companion for Windows—designed to streamline file navigation, workspace awareness, and system interaction without replacing the taskbar.
 
 ## 🚀 Overview
