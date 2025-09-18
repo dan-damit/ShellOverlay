@@ -1,7 +1,5 @@
 # ShellOverlay
 
----
-
 **Author:** Dan Damit  
 **Email:** dan@thedamits.com  
 **Platform:** Windows  
