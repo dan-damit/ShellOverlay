@@ -21,8 +21,7 @@ ShellOverlay is a WPF-based overlay tool that enhances the Windows desktop exper
 
 - `ShellOverlay.UI` — WPF overlay interface with docked layout and branding
 - `ShellOverlay.Core` — File system logic, hotkeys, virtual desktop hooks
-- `ShellOverlay.Interop` — Win32 interop for taskbar control and shell APIs
-- `ShellOverlay.Common` — Shared models, config, and emoji-enhanced logging
+- `ShellOverlay.ViewModels` — View Model class library
 - `ShellOverlay.Tests` — Unit tests for core and interop modules
 
 ## ⚙️ Features (Planned)
