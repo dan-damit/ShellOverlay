@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace ShellOverlay.UI
 {
@@ -16,21 +17,30 @@ namespace ShellOverlay.UI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly DispatcherTimer _statusTimer = new DispatcherTimer();
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        // Event handler for when the window is loaded
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            // Initialization logic here
+            // Initialization logic
             this.Width = SystemParameters.PrimaryScreenWidth;
             this.Left = 0;
             this.Top = 0;
 
-            // Optional: Hide taskbar or initialize modules
-            // TaskbarManager.HideTaskbar();
+            // Set up the timer
+            _statusTimer.Interval = TimeSpan.FromSeconds(1); // update every second
+            _statusTimer.Tick += StatusTimer_Tick;
+            _statusTimer.Start();
+        }
+
+        private void StatusTimer_Tick(object? sender, EventArgs e)
+        {
+            // Example: update status text dynamically
+            StatusTextBlock.Text = $"🧠 CPU: {GetCpuUsage()}%  💾 Disk: {GetDiskUsage()}%  🌐 Net: {GetNetworkStatus()}";
         }
 
         // Event handler for when the window size changes
@@ -49,5 +59,11 @@ namespace ShellOverlay.UI
 
             // Optional: adjust icon sizes, padding, or layout spacing
         }
+
+        // Event handler for updating status information
+        // Stub methods for now — wire these up later
+        private int GetCpuUsage() => 12;
+        private int GetDiskUsage() => 40;
+        private string GetNetworkStatus() => "OK";
     }
 }

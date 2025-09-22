@@ -32,14 +32,28 @@
                         Orientation="Horizontal" />
 
             <!-- Center: Workspace Indicator -->
-            <StackPanel Grid.Column="1"
+            <StackPanel x:Name="WorkspacePanel"
+                        Grid.Column="1"
                         Orientation="Horizontal"
-                        HorizontalAlignment="Center" />
+                        HorizontalAlignment="Center">
+                <TextBlock x:Name="WorkspaceLabel"
+                           Text="Workspace 1"
+                           FontSize="16"
+                           VerticalAlignment="Center"
+                           Margin="8,0" />
+            </StackPanel>
 
             <!-- Right: Status Bar -->
             <StackPanel Grid.Column="2"
                         Orientation="Horizontal"
-                        HorizontalAlignment="Right" />
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Margin="8,0">
+                <TextBlock x:Name="StatusTextBlock"
+                           FontSize="14"
+                           VerticalAlignment="Center"
+                           Margin="4,0" />
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

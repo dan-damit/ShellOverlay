@@ -1,4 +1,4 @@
-﻿namespace ShellOverlay.Common
+﻿namespace ShellOverlay.ViewModels
 {
     public class Class1
     {

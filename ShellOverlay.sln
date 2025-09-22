@@ -5,10 +5,6 @@ VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.Core", "ShellOverlay.Core\ShellOverlay.Core.csproj", "{E4CE1501-F22D-4524-8DA6-8881C43D5AD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.Interop", "ShellOverlay.Interop\ShellOverlay.Interop.csproj", "{68448DEA-81A6-41C5-8038-548DC49977A5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.Common", "ShellOverlay.Common\ShellOverlay.Common.csproj", "{399203B3-00FA-455F-A6B4-E282E430B380}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.Tests", "ShellOverlay.Tests\ShellOverlay.Tests.csproj", "{E71210AC-E67A-4D45-B241-0381464C3317}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.UI", "ShellOverlay.UI\ShellOverlay.UI.csproj", "{44255E1D-0657-494B-C615-E723137797A4}"
@@ -20,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{8EC462
 		Assets\WSSetupIcon.ico = Assets\WSSetupIcon.ico
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellOverlay.ViewModels", "ShellOverlay.ViewModels\ShellOverlay.ViewModels.csproj", "{60970C51-C318-4E1A-B302-03BF048CCBC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,14 +28,6 @@ Global
 		{E4CE1501-F22D-4524-8DA6-8881C43D5AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4CE1501-F22D-4524-8DA6-8881C43D5AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4CE1501-F22D-4524-8DA6-8881C43D5AD0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68448DEA-81A6-41C5-8038-548DC49977A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68448DEA-81A6-41C5-8038-548DC49977A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68448DEA-81A6-41C5-8038-548DC49977A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68448DEA-81A6-41C5-8038-548DC49977A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{399203B3-00FA-455F-A6B4-E282E430B380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{399203B3-00FA-455F-A6B4-E282E430B380}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{399203B3-00FA-455F-A6B4-E282E430B380}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{399203B3-00FA-455F-A6B4-E282E430B380}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E71210AC-E67A-4D45-B241-0381464C3317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E71210AC-E67A-4D45-B241-0381464C3317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E71210AC-E67A-4D45-B241-0381464C3317}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -46,6 +36,10 @@ Global
 		{44255E1D-0657-494B-C615-E723137797A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44255E1D-0657-494B-C615-E723137797A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44255E1D-0657-494B-C615-E723137797A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60970C51-C318-4E1A-B302-03BF048CCBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60970C51-C318-4E1A-B302-03BF048CCBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60970C51-C318-4E1A-B302-03BF048CCBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60970C51-C318-4E1A-B302-03BF048CCBC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
