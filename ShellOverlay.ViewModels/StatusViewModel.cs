@@ -1,4 +1,5 @@
-﻿using ShellOverlay.Core;
+﻿using System;
+using ShellOverlay.Core;
 
 namespace ShellOverlay.ViewModels
 {

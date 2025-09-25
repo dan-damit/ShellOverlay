@@ -14,12 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="9.0.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShellOverlay.Core\ShellOverlay.Core.csproj" />
-    <ProjectReference Include="..\ShellOverlay.Tests\ShellOverlay.Tests.csproj" />
     <ProjectReference Include="..\ShellOverlay.ViewModels\ShellOverlay.ViewModels.csproj" />
   </ItemGroup>
 
