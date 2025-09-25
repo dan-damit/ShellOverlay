@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Runtime.Versioning;
 
 namespace ShellOverlay.Core
 {
+    [SupportedOSPlatform("windows")]
     public class MetricsService
     {
         private readonly PerformanceCounter _cpuCounter;

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Runtime.Versioning;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,6 +13,7 @@ using System.Windows.Threading;
 
 namespace ShellOverlay.UI
 {
+    [SupportedOSPlatform("windows")]
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>

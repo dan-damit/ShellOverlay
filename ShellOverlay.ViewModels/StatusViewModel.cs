@@ -1,4 +1,6 @@
-﻿namespace ShellOverlay.ViewModels
+﻿using ShellOverlay.Core;
+
+namespace ShellOverlay.ViewModels
 {
     public class StatusViewModel
     {

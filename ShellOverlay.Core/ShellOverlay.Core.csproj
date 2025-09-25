@@ -10,4 +10,13 @@
     <Folder Include="Logging\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="9.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShellOverlay.Tests\ShellOverlay.Tests.csproj" />
+    <ProjectReference Include="..\ShellOverlay.ViewModels\ShellOverlay.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>
