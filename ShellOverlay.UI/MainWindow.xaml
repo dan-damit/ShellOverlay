@@ -49,7 +49,7 @@
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center"
                         Margin="8,0">
-                <TextBlock x:Name="StatusTextBlock"
+                <TextBlock Text="{Binding StatusLine}"
                            FontSize="14"
                            VerticalAlignment="Center"
                            Margin="4,0" />
