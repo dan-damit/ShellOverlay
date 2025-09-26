@@ -32,7 +32,7 @@ namespace ShellOverlay.Core
 
         public string GetNetworkStatus()
         {
-            // Placeholder: you can expand this later with real interface stats
+            // Placeholder: can expand this later with real interface stats
             return System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable() ? "Online" : "Offline";
         }
     }
