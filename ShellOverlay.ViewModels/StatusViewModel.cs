@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows.Threading;
+using System.Timers;
 using ShellOverlay.Core;
 
 namespace ShellOverlay.ViewModels
@@ -9,7 +9,7 @@ namespace ShellOverlay.ViewModels
     public class StatusViewModel : INotifyPropertyChanged
     {
         private readonly MetricsService _metrics;
-        private readonly DispatcherTimer _timer;
+        private readonly System.Timers.Timer _timer;
 
         private string _statusLine = "🧠 CPU: --%  💾 Disk: --%  🌐 Net: --";
         public string StatusLine
@@ -22,11 +22,9 @@ namespace ShellOverlay.ViewModels
         {
             _metrics = metrics;
 
-            _timer = new DispatcherTimer
-            {
-                Interval = TimeSpan.FromSeconds(1)
-            };
-            _timer.Tick += (s, e) => UpdateStatus();
+            _timer = new System.Timers.Timer(1000); // 1 second
+            _timer.Elapsed += (s, e) => UpdateStatus();
+            _timer.AutoReset = true;
             _timer.Start();
         }
 
